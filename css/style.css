@@ -76,7 +76,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	width: 250px;
+	width: 400px;
 	background: #2b2b2b;
 	position: absolute;
 	left: 0;
@@ -87,7 +87,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 
 #main {
 	position: absolute;
-	left: 250px;
+	left: 400px;
 	right: 0;
 	top: 0;
 	bottom: 0;
@@ -258,7 +258,7 @@ ul#navigation li .icon {
 	width: 100%;
 	background: #202020;
 	border-top: 1px solid #1A1A1A;
-	width: 250px;
+	width: 400px;
 	z-index: 2;
 	height: 45px;
 }
@@ -1206,7 +1206,7 @@ ul.timeline .date {
 }
 
 .social-icons,#main-nav {
-	left: -250px;
+	left: -400px;
 	z-index: 3;
 }
 
