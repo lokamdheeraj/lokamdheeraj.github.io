@@ -84,19 +84,26 @@
                             </li>  
                             
                             <li>
-                              <a href="#research">
-                                <div class="icon icon-book"></div>
-                                <div class="text">Research</div>
-                              </a>
-                            </li> 
-                            
-                            <li>
-                              <a href="#publications">
-                                <div class="icon icon-edit"></div>
-                                <div class="text">Publications & Patents</div>
-                              </a>
-                            </li> 
+                                <a href="#publications">
+                                  <div class="icon icon-edit"></div>
+                                  <div class="text">Publications & Patents</div>
+                                </a>
+                            </li>
 
+                            <li>
+                                <a href="#projects">
+                                  <div class="icon icon-suitcase"></div>
+                                  <div class="text">Key Projects</div>
+                                </a>
+                            </li>
+
+                            <li>
+                              <a href="#research">
+                                <div class="icon icon-wrench"></div>
+                                <div class="text">Expertise</div>
+                              </a>
+                            </li> 
+                                                
                             <!-- <li>
                               <a href="#gallery">
                                 <div class="icon icon-picture"></div>
@@ -278,7 +285,7 @@
                                 <div class="row">
                                     <div class="col-md-10 col-md-offset-1">
                                         <div class="title text-center">
-                                            <h3>Honors, Awards and Experience </h3>
+                                            <h3>Awards and Accomplishments </h3>
                                         </div>
                                         <ul class="timeline">
                                             <li class="open">
@@ -407,36 +414,6 @@
                             </div>
                         </div>                            
                     </div>
-                </div>
-
-                <div id="research" class="page">
-                    <div class="pageheader">
-
-                        <div class="headercontent">
-
-                            <div class="section-container">
-                                <h2 class="title">Research Summary</h2>
-                            
-                                <div class="row">
-                                    <!-- <div class="col-md-8">
-                                    </div> -->
-                                    <div class="col-md-8">
-                                        <div class="subtitle text-center">
-                                            <h3>Research Interests</h3>
-                                        </div>
-
-                                        <ul class="ul-boxed list-unstyled">
-                                            <li onclick="filterInterests('scm')"><a href="#div_scm">Compiler Design for Transient Fault Tolerance</a></li>
-                                            <li  onclick="filterInterests('ntd')"><a href="#div_ntd">Semi-Conductor Functional Safety</a></li>
-                                            <li  onclick="filterInterests('sa')"><a href="#div_sa">Architectural Modeling</a></li>
-                                            <li  onclick="filterInterests('ra')"><a href="#div_ra">Integrated Vector Management</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
                 <div id="publications" class="page">
@@ -640,6 +617,238 @@
                     </div>
                 </div>
 
+                <div id="projects" class="page">
+                    <div class="page-container">
+                        <div class="pageheader" style="padding-bottom:0px">
+                            <div class="headercontent">
+                                <div class="section-container">
+                                    
+                                    <h2 class="title">Key Projects</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pagecontents">
+                            
+                            <div class="section color-1" id="filters">
+                                <div class="section-container">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h3>Filter by type:</h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
+                                                <option class="filter" value="all" selected>All types</option>
+                                                <option class="filter" value="cpaper">Conference Paper</option>
+                                                <option class="filter" value="jpaper">Manuscript</option>
+                                                <option class="filter" value="patent">Patent Application</option>
+                                                <!-- <option class="filter" value="report">Reports</option>
+                                                <option class="filter" value="tpaper">Technical Papers</option> -->
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="col-md-3" id="sort">
+                                            <span>Sort by year:</span>
+                                            <div class="btn-group pull-right"> 
+
+                                                <button type="button" data-sort="data-year" data-order="desc" class="sort btn btn-default"><i class="icon-sort-by-order"></i></button>
+                                                <button type="button" data-sort="data-year" data-order="asc" class="sort btn btn-default"><i class="icon-sort-by-order-alt"></i></button>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section color-2" id="pub-grid">
+                                <div class="section-container">
+                                    
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="pitems">
+                                                <div class="item mix cpaper" data-year="2017">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="icon-expand-alt"></i>
+                                                            </a>
+                                                            <a href="https://ieeexplore.ieee.org/abstract/document/8060412" class="tooltips" title="External link" target="_blank">
+                                                                <i class="icon-external-link"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">InCheck: An In-application Recovery Scheme for Soft Errors</h4>
+                                                        <div class="pubauthor"><strong> Dheeraj Lokam</strong>,  Moslem Didehban, Aviral Shrivastava</div>
+                                                        <div class="pubcite"><span class="label label-warning">Conference Paper</span> ACM/EDAC/IEEE 54th Design Automation Conference (DAC), Austin, Texas</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>An ideal solution for soft error tolerance should hide the effect of soft errors from user and provide correct results at expected time. Software solutions are attractive because they can provide flexible reliability without imposing any hardware modifications. Our investigation of state-of-the-art error recovery techniques reveals that they suffer from poor coverage (ability to detect and correctly recover from soft errors). This paper presents InCheck (In-application Checkpointing and Recovery) as an effective, safe and timely software technique for complete error coverage. The key features of InCheck are: verified register preservation, single memory location checkpoints, and safe & timely recovery. To evaluate the effectiveness of InCheck, we performed more than 210,000 fault injection experiments on different hardware components of an ARM cortex53-like processor running MiBench applications. The original and SWIFT-R (state-of-the-art) protected programs suffered from 8000 and 1800 instances of wrong outputs respectively, but when protected by InCheck, there was no failure.</p>
+                                                    </div>
+                                                </div> 
+                                                <div class="item mix cpaper" data-year="2017">
+                                                
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="icon-expand-alt"></i>
+                                                            </a>
+                                                            <a href="https://ieeexplore.ieee.org/abstract/document/8203792" class="tooltips" title="External link" target="_blank">
+                                                                <i class="icon-external-link"></i>
+                                                            </a>
+                                                        </div>
+
+                                                        <h4 class="pubtitle">NEMESIS: A Software Approach for Computing in presence of Soft Errors</h4>
+                                                        <div class="pubauthor"><strong>Dheeraj Lokam</strong>, Moslem Didehban, Aviral Shrivastava</div>
+                                                        <div class="pubcite"><span class="label label-warning">Conference Paper</span> IEEE/ACM 36th International Conference on Computer Aided Design, Irvine, California</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>Soft errors are considered as the main reliability challenge for sub-nanoscale microprocessors. Software-level soft error resilience schemes are desirable because they require no hardware modifications and their protection can be tuned based on the application requirements. However, existing software-level error tolerant schemes do not provide high-level of protection. In this work, we present NEMESIS - a compiler-level fine-grain soft error detection, diagnosis and recovery technique that can provide high degree of error-resiliency. NEMESIS runs three versions of computations and detects soft errors by checking the results of all memory write and branch operations. In the case of mismatch, NEMESIS recovery routine reverts the effect of error from the architectural state of the program and program resumes its normal execution. Our extensive μ-architectural-level fault injection experiments results show that NEMESIS transformation is able to detect all soft errors and recover from 97% of detected errors.</p>
+                                                    </div>
+                                                </div>
+												
+                                                <div class="item mix jpaper" data-year="2016">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="icon-expand-alt"></i>
+                                                            </a>
+                                                            <a href="https://repository.asu.edu/items/40720" class="tooltips" title="External link" target="_blank">
+                                                                <i class="icon-external-link"></i>
+                                                            </a>
+                                                            
+                                                        </div>
+
+                                                        <h4 class="pubtitle">An Integrated Recovery Methodology for Fine-grained Soft-Error Detection Schemes</h4>    
+                                                        <div class="pubauthor"><strong> Dheeraj Lokam</strong> </div>
+                                                        <div class="pubcite"><span class="label label-primary">Manuscript</span> Master's Thesis</div>
+                                                        
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>Soft errors are considered as a key reliability challenge for sub-nano scale transistors. An ideal solution for such a challenge should ultimately eliminate the effect of soft errors from the microprocessor. While forward recovery techniques achieve fast recovery from errors by simply voting out the wrong values, they incur the overhead of three copies execution. Backward recovery techniques only need two copies of execution, but suffer from check-pointing overhead. In this work I explored the efficiency of integrating check-pointing into the application and the effectiveness of recovery that can be performed upon it. After evaluating the available fine-grained approaches to perform recovery, I am introducing InCheck, an in-application recovery scheme that can be integrated into instruction-duplication based techniques, thus providing a fast error recovery. The proposed technique makes light-weight checkpoints at the basic-block granularity, and uses them for recovery purposes. To evaluate the effectiveness of the proposed technique, 10,000 fault injection experiments were performed on different hardware components of a modern ARM in-order simulated processor. InCheck was able to recover from all detected errors by replaying about 20 instructions, however, the state of the art recovery scheme failed more than 200 times.</p>
+                                                    </div>
+                                                </div> 
+                                                
+                                                <div class="item mix patent" data-year="2018">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="icon-expand-alt"></i>
+                                                            </a>
+                                                            <a href="https://patents.google.com/patent/US10997027B2/en?inventor=Sai+Ram+Dheeraj+Lokam" class="tooltips" title="External link" target="_blank">
+                                                                <i class="icon-external-link"></i>
+                                                            </a>
+                                                                                                                        
+                                                        </div>
+
+                                                        <h4 class="pubtitle">
+                                                            LIGHTWEIGHT CHECKPOINT TECHNIQUE FOR RESILIENCE AGAINST SOFT ERRORS
+                                                        </h4>
+                                                        <div class="pubauthor"><strong>Dheeraj Lokam</strong>, Moslem Didehban, Aviral Shrivastava</div>
+                                                        <div class="pubcite">
+                                                            <span class="label label-primary">Patent Granted</span> United States application 16/227,514, filed on 12/20/2018.
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+												<div class="item mix patent" data-year="2018">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="icon-expand-alt"></i>
+                                                            </a>
+                                                            <a href="https://patents.google.com/patent/US20230115158A1/en?inventor=Sai+Ram+Dheeraj+Lokam" class="tooltips" title="External link" target="_blank">
+                                                                <i class="icon-external-link"></i>
+                                                            </a>
+                                                                                                                        
+                                                        </div>
+
+                                                        <h4 class="pubtitle">
+                                                            METHOD FOR DETECTING AND RECOVERY FROM SOFT ERRORS IN A COMPUTING DEVICE
+                                                        </h4>
+                                                        <div class="pubauthor"><strong>Dheeraj Lokam</strong>, Moslem Didehban, Aviral Shrivastava</div>
+                                                        <div class="pubcite">
+                                                            <span class="label label-primary">Patent Filed</span> United States application 62/681,129, filed on 06/11/2018.
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+
+                                                <div class="item mix patent" data-year="2019">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="icon-expand-alt"></i>
+                                                            </a>
+                                                            <a href="https://patents.google.com/patent/US10747633B2/en?inventor=Sai+Ram+Dheeraj+Lokam" class="tooltips" title="External link" target="_blank">
+                                                                <i class="icon-external-link"></i>
+                                                            </a>
+                                                                                                                        
+                                                        </div>
+
+                                                        <h4 class="pubtitle">
+                                                            MULTI-LEVEL FAULT SIMULATIONS FOR INTEGRATED CIRCUITS (IC) 
+                                                        </h4>
+                                                        <div class="pubauthor"><strong>Dheeraj Lokam</strong>, Kevin Locker, Siva Prasad Kota, Massimo Ceppi, Teo Cupaiuolo</div>
+                                                        <div class="pubcite">
+                                                            <span class="label label-primary">Patent Granted</span> United States application US10747633B2, filed on 09/24/2018.
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+										</div>
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="research" class="page">
+                    <div class="pageheader">
+
+                        <div class="headercontent">
+
+                            <div class="section-container">
+                                <h2 class="title">Research Summary</h2>
+                            
+                                <div class="row">
+                                    <!-- <div class="col-md-8">
+                                    </div> -->
+                                    <div class="col-md-8">
+                                        <div class="subtitle text-center">
+                                            <h3>Research Interests</h3>
+                                        </div>
+
+                                        <ul class="ul-boxed list-unstyled">
+                                            <li onclick="filterInterests('scm')"><a href="#div_scm">Compiler Design for Transient Fault Tolerance</a></li>
+                                            <li  onclick="filterInterests('ntd')"><a href="#div_ntd">Semi-Conductor Functional Safety</a></li>
+                                            <li  onclick="filterInterests('sa')"><a href="#div_sa">Architectural Modeling</a></li>
+                                            <li  onclick="filterInterests('ra')"><a href="#div_ra">Integrated Vector Management</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                
 
                 <div id="gallery" class="page">
                     <div class="pagecontents">
